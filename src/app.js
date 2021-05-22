@@ -64,6 +64,11 @@ io.on('connection', (socket) => {
     })
 })
 
+
+app.get('/', (req, res) => {
+    res.send('Hello')
+})
+
 server.listen(3000, () => {
     console.log('server running')
 })
